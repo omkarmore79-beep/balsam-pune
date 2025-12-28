@@ -1,8 +1,6 @@
-import dynamic from "next/dynamic";
+"use client";
 
-const MenuClient = dynamic(() => import("./menuclient"), {
-  ssr: false,
-});
+import MenuClient from "./MenuClient";
 
 export default function MenuPage() {
   return <MenuClient />;
